@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -g -O0 -Wall -fprofile-arcs -ftest-coverage -g   CMakeFiles/untitled2.dir/main.cpp.o CMakeFiles/untitled2.dir/Parser.cpp.o CMakeFiles/untitled2.dir/MyParser.cpp.o  -o untitled2 test/googletest/libgtestd.a test/googletest/libgtest_maind.a test/googletest/libgtestd.a -pthread 

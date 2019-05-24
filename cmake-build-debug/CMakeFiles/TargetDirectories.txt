@@ -1,0 +1,7 @@
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/untitled2.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/test/googletest/CMakeFiles/rebuild_cache.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/test/googletest/CMakeFiles/gtest.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/test/googletest/CMakeFiles/edit_cache.dir
+/home/funtik/CLionProjects/untitled2/cmake-build-debug/test/googletest/CMakeFiles/gtest_main.dir
