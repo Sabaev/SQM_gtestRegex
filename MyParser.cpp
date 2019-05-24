@@ -5,7 +5,7 @@
 #include "MyParser.h"
 #include <set>
 
-bool MyParser::checkPattern(size_t &index, const std::string &t){
+bool MyParser::checkPattern(size_t &index, const std::wstring &t){
     size_t state{initState};
     size_t pState{state};
     while (state != 0 && state != 1 && index < t.size()){
@@ -17,7 +17,7 @@ bool MyParser::checkPattern(size_t &index, const std::string &t){
 }
 
 
-int64_t MyParser::parse(const std::string &text) {
+int64_t MyParser::parse(const std::wstring &text) {
     size_t index{0};
     for (; index < text.size(); ++index) {
         size_t i = index;
@@ -43,20 +43,19 @@ void clearJumpers(char c,size_t jState, size_t cState, std::map<char, std::map<s
 
 
 
-void MyParser::setPattern(const std::string &pattern) {
+void MyParser::setPattern(const std::wstring &pattern) {
     table.clear();
     std::set<size_t > jumpers;
     if(!pattern.empty()) {
         size_t state{2};
         bool jump = false;
-        char pC{startSymbol};
+        wchar_t pC{startSymbol};
         for (auto c:pattern) {
             if (c == '*' && state > 2) {
                 table[pC][state] = state;
                 jumpers.insert(state);
                 --state;
                 jump = true;
-
             }
             else if (c == '+' && state > 2) {
                 table[pC][state] = state;

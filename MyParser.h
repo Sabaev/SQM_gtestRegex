@@ -14,17 +14,17 @@
 struct MyParser {
     MyParser() = default;
 
-    void setPattern(const std::string &pattern);
+    void setPattern(const std::wstring &pattern);
 
-    int64_t parse(const std::string &text);
+    int64_t parse(const std::wstring &text);
 
 private:
     std::map<char, std::map<size_t, size_t >> table;
-    char startSymbol = '\02';
-    char endSymbol = '\0';
+    wchar_t startSymbol = '\02';
+    wchar_t endSymbol = '\0';
     size_t initState{2};
 
-    bool checkPattern(size_t &index, const std::string &t);
+    bool checkPattern(size_t &index, const std::wstring &t);
 };
 
 
