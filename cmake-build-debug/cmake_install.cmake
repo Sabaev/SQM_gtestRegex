@@ -1,4 +1,4 @@
-# Install script for directory: /home/funtik/CLionProjects/untitled2
+# Install script for directory: /home/funtik/CLionProjects/untitled2/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/funtik/CLionProjects/untitled2/cmake-build-debug/test/googletest/cmake_install.cmake")
+  include("/home/funtik/CLionProjects/untitled2/cmake-build-debug/googletest/cmake_install.cmake")
 
 endif()
 

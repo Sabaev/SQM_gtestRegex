@@ -32,7 +32,7 @@ int64_t MyParser::parse(const std::wstring &text) {
 }
 
 
-void clearJumpers(char c,size_t jState, size_t cState, std::map<char, std::map<size_t ,size_t >> &table, std::set<size_t > &jumpers) {
+void clearJumpers(wchar_t c,size_t jState, size_t cState, std::map<wchar_t , std::map<size_t ,size_t >> &table, std::set<size_t > &jumpers) {
     while (jumpers.find(jState) != jumpers.end()) {
         table[c][jState] = cState;
         --jState;
@@ -57,7 +57,7 @@ void MyParser::setPattern(const std::wstring &pattern) {
                 --state;
                 jump = true;
             }
-            else if (c == '+' && state > 2) {
+            else if (c == L'+' && state > 2) {
                 table[pC][state] = state;
             } else {
                 if(jump){
@@ -68,7 +68,7 @@ void MyParser::setPattern(const std::wstring &pattern) {
                     ++state;
                     jump = false;
 
-                } else if(c != '*' && c != '+') {
+                } else if(c != L'*' && c != L'+') {
                     table[c][state] = state + 1;
                     ++state;
                 }

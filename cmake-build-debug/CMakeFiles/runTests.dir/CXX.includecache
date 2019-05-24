@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/funtik/CLionProjects/untitled2/MyParser.cpp
+MyParser.h
+/home/funtik/CLionProjects/untitled2/MyParser.h
+set
+-
+
+/home/funtik/CLionProjects/untitled2/MyParser.h
+utility
+-
+string
+-
+map
+-
+

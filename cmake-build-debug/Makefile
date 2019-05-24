@@ -48,7 +48,7 @@ RM = /snap/clion/70/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/funtik/CLionProjects/untitled2
+CMAKE_SOURCE_DIR = /home/funtik/CLionProjects/untitled2/test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/funtik/CLionProjects/untitled2/cmake-build-debug
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled2
+# Target rules for targets named runTests
 
 # Build rule for target.
-untitled2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 untitled2
-.PHONY : untitled2
+runTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runTests
+.PHONY : runTests
 
 # fast build rule for target.
-untitled2/fast:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/build
-.PHONY : untitled2/fast
+runTests/fast:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
+.PHONY : runTests/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -133,7 +133,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f test/googletest/CMakeFiles/gtest.dir/build.make test/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -146,62 +146,35 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f test/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-MyParser.o: MyParser.cpp.o
+home/funtik/CLionProjects/untitled2/MyParser.o: home/funtik/CLionProjects/untitled2/MyParser.cpp.o
 
-.PHONY : MyParser.o
-
-# target to build an object file
-MyParser.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/MyParser.cpp.o
-.PHONY : MyParser.cpp.o
-
-MyParser.i: MyParser.cpp.i
-
-.PHONY : MyParser.i
-
-# target to preprocess a source file
-MyParser.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/MyParser.cpp.i
-.PHONY : MyParser.cpp.i
-
-MyParser.s: MyParser.cpp.s
-
-.PHONY : MyParser.s
-
-# target to generate assembly for a file
-MyParser.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/MyParser.cpp.s
-.PHONY : MyParser.cpp.s
-
-Parser.o: Parser.cpp.o
-
-.PHONY : Parser.o
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.o
 
 # target to build an object file
-Parser.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/Parser.cpp.o
-.PHONY : Parser.cpp.o
+home/funtik/CLionProjects/untitled2/MyParser.cpp.o:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/funtik/CLionProjects/untitled2/MyParser.cpp.o
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.cpp.o
 
-Parser.i: Parser.cpp.i
+home/funtik/CLionProjects/untitled2/MyParser.i: home/funtik/CLionProjects/untitled2/MyParser.cpp.i
 
-.PHONY : Parser.i
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.i
 
 # target to preprocess a source file
-Parser.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/Parser.cpp.i
-.PHONY : Parser.cpp.i
+home/funtik/CLionProjects/untitled2/MyParser.cpp.i:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/funtik/CLionProjects/untitled2/MyParser.cpp.i
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.cpp.i
 
-Parser.s: Parser.cpp.s
+home/funtik/CLionProjects/untitled2/MyParser.s: home/funtik/CLionProjects/untitled2/MyParser.cpp.s
 
-.PHONY : Parser.s
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.s
 
 # target to generate assembly for a file
-Parser.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/Parser.cpp.s
-.PHONY : Parser.cpp.s
+home/funtik/CLionProjects/untitled2/MyParser.cpp.s:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/funtik/CLionProjects/untitled2/MyParser.cpp.s
+.PHONY : home/funtik/CLionProjects/untitled2/MyParser.cpp.s
 
 main.o: main.cpp.o
 
@@ -209,7 +182,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -218,7 +191,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -227,7 +200,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -237,16 +210,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... untitled2"
+	@echo "... runTests"
 	@echo "... edit_cache"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... MyParser.o"
-	@echo "... MyParser.i"
-	@echo "... MyParser.s"
-	@echo "... Parser.o"
-	@echo "... Parser.i"
-	@echo "... Parser.s"
+	@echo "... home/funtik/CLionProjects/untitled2/MyParser.o"
+	@echo "... home/funtik/CLionProjects/untitled2/MyParser.i"
+	@echo "... home/funtik/CLionProjects/untitled2/MyParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

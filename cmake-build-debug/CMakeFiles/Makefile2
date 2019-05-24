@@ -59,140 +59,140 @@ RM = /snap/clion/70/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/funtik/CLionProjects/untitled2
+CMAKE_SOURCE_DIR = /home/funtik/CLionProjects/untitled2/test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/funtik/CLionProjects/untitled2/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/untitled2.dir
+# Target rules for target CMakeFiles/runTests.dir
 
 # All Build rule for target.
-CMakeFiles/untitled2.dir/all: test/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/untitled2.dir/all: test/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/depend
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8 "Built target untitled2"
-.PHONY : CMakeFiles/untitled2.dir/all
+CMakeFiles/runTests.dir/all: googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/runTests.dir/all: googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/depend
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target runTests"
+.PHONY : CMakeFiles/runTests.dir/all
 
 # Include target in all.
-all: CMakeFiles/untitled2.dir/all
+all: CMakeFiles/runTests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/untitled2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/untitled2.dir/all
+CMakeFiles/runTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/untitled2.dir/rule
+.PHONY : CMakeFiles/runTests.dir/rule
 
 # Convenience name for target.
-untitled2: CMakeFiles/untitled2.dir/rule
+runTests: CMakeFiles/runTests.dir/rule
 
-.PHONY : untitled2
-
-# clean rule for target.
-CMakeFiles/untitled2.dir/clean:
-	$(MAKE) -f CMakeFiles/untitled2.dir/build.make CMakeFiles/untitled2.dir/clean
-.PHONY : CMakeFiles/untitled2.dir/clean
+.PHONY : runTests
 
 # clean rule for target.
-clean: CMakeFiles/untitled2.dir/clean
+CMakeFiles/runTests.dir/clean:
+	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/clean
+.PHONY : CMakeFiles/runTests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/runTests.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory test/googletest
+# Directory level rules for directory googletest
 
 # Convenience name for "all" pass in the directory.
-test/googletest/all: test/googletest/CMakeFiles/gtest.dir/all
-test/googletest/all: test/googletest/CMakeFiles/gtest_main.dir/all
+googletest/all: googletest/CMakeFiles/gtest.dir/all
+googletest/all: googletest/CMakeFiles/gtest_main.dir/all
 
-.PHONY : test/googletest/all
+.PHONY : googletest/all
 
 # Convenience name for "clean" pass in the directory.
-test/googletest/clean: test/googletest/CMakeFiles/gtest.dir/clean
-test/googletest/clean: test/googletest/CMakeFiles/gtest_main.dir/clean
+googletest/clean: googletest/CMakeFiles/gtest.dir/clean
+googletest/clean: googletest/CMakeFiles/gtest_main.dir/clean
 
-.PHONY : test/googletest/clean
+.PHONY : googletest/clean
 
 # Convenience name for "preinstall" pass in the directory.
-test/googletest/preinstall:
+googletest/preinstall:
 
-.PHONY : test/googletest/preinstall
+.PHONY : googletest/preinstall
 
 #=============================================================================
-# Target rules for target test/googletest/CMakeFiles/gtest.dir
+# Target rules for target googletest/CMakeFiles/gtest.dir
 
 # All Build rule for target.
-test/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) -f test/googletest/CMakeFiles/gtest.dir/build.make test/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) -f test/googletest/CMakeFiles/gtest.dir/build.make test/googletest/CMakeFiles/gtest.dir/build
+googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target gtest"
-.PHONY : test/googletest/CMakeFiles/gtest.dir/all
+.PHONY : googletest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
-all: test/googletest/CMakeFiles/gtest.dir/all
+all: googletest/CMakeFiles/gtest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 test/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 0
-.PHONY : test/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-gtest: test/googletest/CMakeFiles/gtest.dir/rule
+gtest: googletest/CMakeFiles/gtest.dir/rule
 
 .PHONY : gtest
 
 # clean rule for target.
-test/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) -f test/googletest/CMakeFiles/gtest.dir/build.make test/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : test/googletest/CMakeFiles/gtest.dir/clean
+googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest/CMakeFiles/gtest.dir/build.make googletest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/CMakeFiles/gtest.dir/clean
 
 # clean rule for target.
-clean: test/googletest/CMakeFiles/gtest.dir/clean
+clean: googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/googletest/CMakeFiles/gtest_main.dir
+# Target rules for target googletest/CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
-test/googletest/CMakeFiles/gtest_main.dir/all: test/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f test/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) -f test/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/CMakeFiles/gtest_main.dir/build
+googletest/CMakeFiles/gtest_main.dir/all: googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target gtest_main"
-.PHONY : test/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : googletest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
-all: test/googletest/CMakeFiles/gtest_main.dir/all
+all: googletest/CMakeFiles/gtest_main.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 test/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 googletest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/funtik/CLionProjects/untitled2/cmake-build-debug/CMakeFiles 0
-.PHONY : test/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
-gtest_main: test/googletest/CMakeFiles/gtest_main.dir/rule
+gtest_main: googletest/CMakeFiles/gtest_main.dir/rule
 
 .PHONY : gtest_main
 
 # clean rule for target.
-test/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) -f test/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : test/googletest/CMakeFiles/gtest_main.dir/clean
+googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest/CMakeFiles/gtest_main.dir/build.make googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/CMakeFiles/gtest_main.dir/clean
 
 # clean rule for target.
-clean: test/googletest/CMakeFiles/gtest_main.dir/clean
+clean: googletest/CMakeFiles/gtest_main.dir/clean
 
 .PHONY : clean
 

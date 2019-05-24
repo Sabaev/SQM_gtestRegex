@@ -19,7 +19,7 @@ struct MyParser {
     int64_t parse(const std::wstring &text);
 
 private:
-    std::map<char, std::map<size_t, size_t >> table;
+    std::map<wchar_t , std::map<size_t, size_t >> table;
     wchar_t startSymbol = '\02';
     wchar_t endSymbol = '\0';
     size_t initState{2};
